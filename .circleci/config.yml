@@ -5,5 +5,5 @@ jobs:
         docker: 
             - image: golang:1.9.2
         steps:
-            - run: go get -u github.com/byuoitav/deployment-testing-microservice
+            - run: go get github.com/byuoitav/deployment-testing-microservice
             - run: go build
