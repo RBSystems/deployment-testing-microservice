@@ -2,7 +2,6 @@ package main
 
 import (
 	"net/http"
-	"os"
 
 	"github.com/byuoitav/authmiddleware"
 	"github.com/labstack/echo"
@@ -31,6 +30,6 @@ func main() {
 
 func health(context echo.Context) error {
 
-	return context.JSON(http.StatusOK, os.Getenv("HEALTH_MESSAGE"))
+	return context.JSON(http.StatusOK, "the fleet has moved out of lightspeed and we're preparing to - augh!")
 
 }

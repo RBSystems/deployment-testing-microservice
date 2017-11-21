@@ -1,0 +1,9 @@
+version: 2
+jobs:
+    build:
+        working_directory: /go/src/github.com/deployment-testing-microservice
+        docker: 
+            - image: golang:1.9.2
+        steps:
+            - run: go get -u github.com/byuoitav/deployment-testing-microservice
+            - run: go build
