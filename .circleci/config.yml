@@ -1,7 +1,6 @@
 version: 2
 jobs:
     build:
-        working_directory: /go/src/github.com/deployment-testing-microservice
         docker: 
             - image: golang:1.9.2
         steps:
